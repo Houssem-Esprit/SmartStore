@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePage_Fragment">
+
+    <fragment
+        android:id="@+id/homePage_Fragment"
+        android:name="com.p2j.MohamedApp.Fragment.HomePage_Fragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_page_" >
+        <action
+            android:id="@+id/action_homePage_Fragment_to_store_Fragment"
+            app:destination="@id/store_Fragment" />
+        <action
+            android:id="@+id/action_homePage_Fragment_to_article_Fragment"
+            app:destination="@id/article_Fragment" />
+        <action
+            android:id="@+id/action_homePage_Fragment_to_wishList_Fragment"
+            app:destination="@id/wishList_Fragment" />
+        <action
+            android:id="@+id/action_homePage_Fragment_to_addArticleFragment"
+            app:destination="@id/addArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/store_Fragment"
+        android:name="com.p2j.MohamedApp.Fragment.Store_Fragment"
+        android:label="/Store"
+        tools:layout="@layout/fragment_store_" >
+        <action
+            android:id="@+id/action_store_Fragment_to_article_Fragment"
+            app:destination="@id/article_Fragment" />
+        <action
+            android:id="@+id/action_store_Fragment_to_wishList_Fragment"
+            app:destination="@id/wishList_Fragment" />
+        <action
+            android:id="@+id/action_store_Fragment_to_addArticleFragment"
+            app:destination="@id/addArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/article_Fragment"
+        android:name="com.p2j.MohamedApp.Fragment.Article_Fragment"
+        android:label="/Article"
+        tools:layout="@layout/fragment_article_" >
+        <action
+            android:id="@+id/action_article_Fragment_to_wishList_Fragment"
+            app:destination="@id/wishList_Fragment" />
+        <action
+            android:id="@+id/action_article_Fragment_to_addArticleFragment"
+            app:destination="@id/addArticleFragment" />
+        <action
+            android:id="@+id/action_article_Fragment_to_modifyArticle"
+            app:destination="@id/modifyArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishList_Fragment"
+        android:name="com.p2j.MohamedApp.Fragment.WishList_Fragment"
+        android:label="/Wishlist"
+        tools:layout="@layout/fragment_wish_list_" >
+        <action
+            android:id="@+id/action_wishList_Fragment_to_addArticleFragment"
+            app:destination="@id/addArticleFragment" />
+        <action
+            android:id="@+id/action_wishList_Fragment_to_modifyWhishList"
+            app:destination="@id/modifyWhishList" />
+    </fragment>
+    <fragment
+        android:id="@+id/addArticleFragment"
+        android:name="com.p2j.MohamedApp.Fragment.AddArticleFragment"
+        android:label="/Add article"
+        tools:layout="@layout/fragment_add_article" >
+        <action
+            android:id="@+id/action_addArticleFragment_to_wishList_Fragment"
+            app:destination="@id/wishList_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modifyWhishList"
+        android:name="com.p2j.MohamedApp.Fragment.ModifyWhishList"
+        android:label="/Edit whishlist"
+        tools:layout="@layout/fragment_modify_whish_list" >
+        <action
+            android:id="@+id/action_modifyWhishList_to_wishList_Fragment"
+            app:destination="@id/wishList_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modifyArticle"
+        android:name="com.p2j.MohamedApp.Fragment.ModifyArticle"
+        android:label="/Edit article" >
+        <action
+            android:id="@+id/action_modifyArticle_to_store_Fragment"
+            app:destination="@id/store_Fragment" />
+    </fragment>
+</navigation>

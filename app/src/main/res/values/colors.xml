@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="M_colorPrimary">#fd8368</color>
+    <color name="M_colorSecond">#5dceda</color>
+    <color name="M_colorThird">#fed07c</color>
+    <color name="M_blueGrey">#f5f6f7</color>
+    <color name="M_white">#ffffff</color>
+    <color name="M_PrimaryBlack">#000000</color>
+    <color name="M_colorSecond_hint">#995dceda</color>
+    <color name="OffGreen">#6EFF70</color>
+    <color name="OnGreen">#24D330</color>
+    <color name="LightGrey_alpha">#80D3D3D3	</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="SilverTitle">#C0C0C0</color>
+</resources>

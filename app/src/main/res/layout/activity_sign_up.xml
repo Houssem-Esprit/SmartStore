@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".Activity.SignUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/holding_phone" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_largeback"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/cart_64"
+
+                    />
+
+                <view
+                    class="android.widget.LinearLayout"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/M_colorPrimary"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Smart Store"
+                    android:textColor="@color/M_colorSecond"
+                    android:textScaleX="1.3"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:text="Sign Up"
+                android:textColor="@color/M_colorPrimary"
+                android:textScaleX="1.3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <view
+                class="android.widget.LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:background="@color/M_colorPrimary" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/img_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Finish your inscription by adding your profile picture. "
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+
+                                android:id="@+id/profileImg"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="left"
+                                android:src="@drawable/face"
+                                app:civ_border_color="@color/M_colorPrimary"
+                                app:civ_border_width="3dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <ImageView
+                                android:id="@+id/pickImgAction"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/user_img_profile"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/camera_24" />
+
+
+                        </FrameLayout>
+
+                        <Button
+                            android:id="@+id/Submit_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="40dp"
+                            android:text="SUBMIT"
+                            android:textColor="@color/M_white"
+                            app:backgroundTint="@color/M_colorSecond"
+                            app:shapeAppearance="?attr/shapeAppearanceSmallComponent" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/BluetoothPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/bluetooth_notice"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="6">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="5"
+                            android:hint="MAC@, exp: 16:D2:78:95:1C:F2"
+                            app:boxStrokeColor="@color/M_colorSecond"
+                            app:endIconMode="clear_text"
+                            app:hintTextColor="@color/M_colorSecond_hint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/Mac_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/add_MAc"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/M_colorSecond"
+                            app:icon="@drawable/plus_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="5dp"
+                            app:iconTint="@color/M_white"
+                            app:shapeAppearance="?attr/shapeAppearanceSmallComponent" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bluetooth_mark"
+                        android:textColor="@color/M_colorPrimary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mac" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SignUp_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="You are?"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/inscripType_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:prompt="@string/spinner_name" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="ID card"
+                        app:boxStrokeColor="@color/M_colorSecond"
+                        app:endIconMode="clear_text"
+                        app:hintTextColor="@color/M_colorSecond_hint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ID_Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/FirstName_hint"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="First name"
+                        app:boxStrokeColor="@color/M_colorSecond"
+                        app:endIconMode="clear_text"
+                        app:hintTextColor="@color/M_colorSecond_hint">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/FirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Last name"
+                        app:boxStrokeColor="@color/M_colorSecond"
+                        app:endIconMode="clear_text"
+                        app:hintTextColor="@color/M_colorSecond_hint">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/LastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Login, exp: med_amine"
+                        app:boxStrokeColor="@color/M_colorSecond"
+                        app:endIconMode="clear_text"
+                        app:hintTextColor="@color/M_colorSecond_hint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        app:boxStrokeColor="@color/M_colorSecond"
+                        app:endIconMode="password_toggle"
+                        app:hintTextColor="@color/M_colorSecond_hint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/warningSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:text=""
+                        android:textColor="@color/M_colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+
+                    <Button
+                        android:id="@+id/SignUp_Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Sign Up"
+                        android:textColor="@color/M_white"
+                        app:backgroundTint="@color/M_colorSecond"
+                        app:shapeAppearance="?attr/shapeAppearanceSmallComponent" />
+
+                    <TextView
+                        android:id="@+id/GoToSignIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Already have an account ? Sign in now"
+                        android:textColor="@color/M_colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

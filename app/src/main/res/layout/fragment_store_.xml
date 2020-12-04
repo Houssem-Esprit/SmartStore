@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/addarticle_border"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Store_Fragment">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginTop="20dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:background="@color/M_blueGrey"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/StoreImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/face"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/M_white"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Welcome back in"
+            android:textSize="16sp"
+            android:textColor="@color/M_PrimaryBlack"/>
+
+        <TextView
+            android:id="@+id/StoreNameWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Welcome back in"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/M_PrimaryBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/M_PrimaryBlack"
+            android:text="store !"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ArticleStoreRecycler"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

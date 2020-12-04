@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MohamedApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spinner_name">Inscription type</string>
+    <string name="store_name">Store name</string>
+    <string name="alerte_title">Warning !</string>
+    <string name="alerte_support_text">You are about to remove this order from your wish-list, are you sure ?  </string>
+    <string name="cancel">Cancel</string>
+    <string name="bluetooth_notice">For additional feature for stores, you need to provide your bluetooth MAC address so customers start be able to detect their order state via bluetooth !</string>
+    <string name="bluetooth_mark">Bluetooth Mac address provided by the bluetooth device provider, please return to them for any problem. </string>
+    <string name="notif_disc">You have recently make an order with us and we are happy to inform you that your order is ready to go !</string>
+</resources>

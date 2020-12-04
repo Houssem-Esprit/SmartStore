@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+
+
+    <item
+        android:id="@+id/wishList_Fragment"
+        android:icon="@drawable/outline"
+        android:title="Wish List"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_white_24"
+        android:title="Log out"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notif_24"
+        android:title="Notification"
+        app:showAsAction="always" />
+
+</menu>
