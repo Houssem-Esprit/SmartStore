@@ -6,7 +6,7 @@
 Commercial Android app that created to allow users to shop online and to keep track of their order status using Bluetooth detection
 
 ## Technologies
-* Android (min SDK) 21 - (target) 30
+* Android (min SDK) 16 - (target) 30
 * Java 
 * Retrofit + AsyncTask (deprecated)
 * MVC design pattern
@@ -15,7 +15,7 @@ Commercial Android app that created to allow users to shop online and to keep tr
 ## Get Started
 Download or clone the project:
 ```bash
-https://github.com/Houssem-Esprit/Mnart.git
+https://github.com/Houssem-Esprit/SmartStore.git
 ```
 
 > Make sure to clone the backend servers [here](http://github.com).
