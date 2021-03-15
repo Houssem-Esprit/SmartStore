@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.p2j.MohamedApp"
+        applicationId "com.p2j.smartStore"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -43,7 +43,8 @@ dependencies {
     implementation 'androidx.palette:palette:1.0.0'
     implementation 'androidx.work:work-runtime:2.5.0-alpha01'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
-
+    // File path extractor library
+    implementation 'com.github.onimur:handle-path-oz:1.0.7'
     // For developers using AndroidX in their applications
     implementation 'pub.devrel:easypermissions:3.0.0'
     //noinspection GradleCompatible

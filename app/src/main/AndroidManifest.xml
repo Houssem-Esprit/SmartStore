@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.p2j.MohamedApp">
+    package="com.p2j.smartStore">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -20,12 +20,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.Notification"></activity>
-        <activity android:name=".Activity.NotificationDemo" />
-        <activity android:name=".Activity.Bluetooth" />
-        <activity android:name=".Activity.MainActivity" />
-        <activity android:name=".Activity.SignIn_Activity" />
-        <activity android:name=".Activity.SignUp">
+        <activity android:name="com.p2j.smartStore.Activity.Notification"></activity>
+        <activity android:name="com.p2j.smartStore.Activity.NotificationDemo" />
+        <activity android:name="com.p2j.smartStore.Activity.Bluetooth" />
+        <activity android:name="com.p2j.smartStore.Activity.MainActivity" />
+        <activity android:name="com.p2j.smartStore.Activity.SignIn_Activity" />
+        <activity android:name="com.p2j.smartStore.Activity.SignUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

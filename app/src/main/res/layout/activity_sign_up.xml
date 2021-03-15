@@ -223,6 +223,8 @@
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
+
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
@@ -302,6 +304,7 @@
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/lastNameLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
@@ -309,7 +312,6 @@
                         app:boxStrokeColor="@color/M_colorSecond"
                         app:endIconMode="clear_text"
                         app:hintTextColor="@color/M_colorSecond_hint">
-
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/LastName"

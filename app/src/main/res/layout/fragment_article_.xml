@@ -299,8 +299,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:inputType="textMultiLine"
-            android:text="this is a new product aim to help people to do better in theie life and so on this fuckin shit please stop writing this is boring ohh god , fuck fuck fuck just stop "
-            />
+            android:text="Name: Nike Air Force 1 Sticky Rubber Olive Khaki 333884-211
+            Manufacturer Sku: 333884-211
+            Brand: Nike
+            Type: Men's Running
+            Gender: Mens
+            Tags: Nike Air Force Shoes, Air Force 1 Low"/>
 
     </LinearLayout>
 
