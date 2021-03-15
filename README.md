@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="index.css"><header class="container">
-  
+    <img style="border-radius:50%" src="images/smartStore.png" alt="Smart-Store logo" width=100>
   <h1>Smart-Store</h1>
 </header>
 <body class = "secContainer">
